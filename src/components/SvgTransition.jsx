@@ -1,7 +1,7 @@
 const SvgTransition = ({ version }) => {
   return (
     <>
-      {version == 1 ? (
+      {version === 1 ? (
         <div className="relative -mt-12 lg:-mt-24">
           <svg
             viewBox="0 0 1428 174"
