@@ -4,13 +4,24 @@ export default function Footer() {
       <div className="container mx-auto px-8">
         <div className="w-full flex flex-col md:flex-row py-6">
           <div className="flex-1 mb-6 text-black">
-            <a
-              className="text-white no-underline hover:no-underline font-bold text-lg lg:text-xl"
-              href="#"
-            >
-              <img src="/logo.png" className="h-8 w-8 float-left" />
-              <span className="align-middle pl-2">publica-fides</span>
-            </a>
+            <div>
+              <a
+                className="text-white no-underline hover:no-underline font-bold text-lg lg:text-xl"
+                href="#"
+              >
+                <img src="/logo.png" className="h-8 w-8 float-left" />
+                <span className="align-middle pl-2">publica-fides</span>
+              </a>
+            </div>
+            <div className="mt-5 mx-10">
+              <a
+                href="https://www.freepik.com/free-photos-vectors/background"
+                className="text-gray-200 text-xs"
+              >
+                Background vector, logo, and hero created by freepik -
+                www.freepik.com
+              </a>
+            </div>
           </div>
           <div className="flex-1">
             <p className="uppercase text-purple-400 font-bold md:mb-6">Links</p>
@@ -126,12 +137,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <a
-        href="https://www.freepik.com/free-photos-vectors/background"
-        className="text-gray-500"
-      >
-        Background vector created by freepik - www.freepik.com
-      </a>
     </footer>
   );
 }
