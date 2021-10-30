@@ -9,7 +9,7 @@ import {
 } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
-import { useSubstrate } from "../substrate-lib";
+import { SubstrateContextProvider, useSubstrate } from "../substrate-lib";
 import { DeveloperConsole } from "../substrate-lib/components";
 
 import AccountSelector from "../components/AccountSelector";
@@ -61,50 +61,52 @@ function TryChain() {
     );
   }
 
-  const contextRef = createRef();
-
   return (
-    <div ref={contextRef}>
-      <Sticky context={contextRef}>
-        <AccountSelector setAccountAddress={setAccountAddress} />
-      </Sticky>
-      <Container>
-        <Grid stackable columns="equal">
-          {/* <Grid.Row stretched>
+    <section className="bg-dark12 py-8">
+      <div>
+        <Container className="container bg-gray-900 text-gray-600 max-w-7xl m-8 p-10 mx-auto md:flex rounded-xl">
+          <Grid stackable columns="equal">
+            {/* <Grid.Row stretched>
             <Participants />
           </Grid.Row> */}
 
-          <Grid.Row>
-            <SignUpUser
-              accountPair={accountPair}
-              cb={() => setisUsersignedUp(true)}
-              show={isUsersignedUp}
-            />
-          </Grid.Row>
+            <Grid.Row>
+              <Grid.Column>
+                <SignUpUser
+                  accountPair={accountPair}
+                  cb={() => setisUsersignedUp(true)}
+                  show={isUsersignedUp}
+                />
+              </Grid.Column>
+              <Grid.Column>
+                <AccountSelector setAccountAddress={setAccountAddress} />
+              </Grid.Column>
+            </Grid.Row>
 
-          <Grid.Row>
-            <ContentSubmission
-              accountPair={accountPair}
-              cb={() => setisUsersignedUp(true)}
-              show={isUsersignedUp}
-            />
-          </Grid.Row>
+            <Grid.Row>
+              <ContentSubmission
+                accountPair={accountPair}
+                cb={() => setisUsersignedUp(true)}
+                show={isUsersignedUp}
+              />
+            </Grid.Row>
 
-          <Grid.Row>
-            <ContentToReview accountPair={accountPair} />
-          </Grid.Row>
+            <Grid.Row>
+              <ContentToReview accountPair={accountPair} />
+            </Grid.Row>
 
-          <Grid.Row>
-            <ObjectiveClaimsToReview accountPair={accountPair} />
-          </Grid.Row>
+            <Grid.Row>
+              <ObjectiveClaimsToReview accountPair={accountPair} />
+            </Grid.Row>
 
-          {/* <Grid.Row>
+            {/* <Grid.Row>
             <TemplateModule accountPair={accountPair} />
           </Grid.Row> */}
-        </Grid>
-      </Container>
-      <DeveloperConsole />
-    </div>
+          </Grid>
+        </Container>
+        <DeveloperConsole />
+      </div>
+    </section>
   );
 }
 

@@ -167,7 +167,7 @@ function Main(props) {
 
   return (
     <Grid.Column width={8}>
-      <h1>Content Submission</h1>
+      <h1 className="text-gray-400">Content Submission</h1>
       <h3>
         If you'd like to submit a piece of content to be processed by the
         system, please enter the url of the content below
@@ -208,7 +208,12 @@ function Main(props) {
             }}
           />
         </Form.Field>
-        <div style={{ overflowWrap: "break-word" }}>{status}</div>
+        {status && (
+          <div className="bg-gray-800 p-5 break-words">
+            <div className="text-emerald-600">Status:</div>
+            <p className="text-gray-400">{status}</p>
+          </div>
+        )}
       </Form>
     </Grid.Column>
   );

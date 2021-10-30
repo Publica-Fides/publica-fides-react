@@ -7,7 +7,7 @@ export default function Hero() {
   }
 
   return (
-    <div>
+    <>
       <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         {/* <!--Left Col--> */}
         <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -30,10 +30,10 @@ export default function Hero() {
           </button>
         </div>
         {/* <!--Right Col--> */}
-        <div className="w-full md:w-3/5 py-6 text-center">
+        <div className="grid w-full md:w-3/5 py-6 text-center justify-items-end">
           <img className="w-full md:w-4/5 z-50" src="/hero.png" alt="" />
         </div>
       </div>
-    </div>
+    </>
   );
 }

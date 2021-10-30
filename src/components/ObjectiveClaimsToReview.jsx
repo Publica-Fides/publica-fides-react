@@ -58,8 +58,8 @@ export default function Main(props) {
 
   return (
     <Grid.Column>
-      <h1>Objective Claims for Review</h1>
-      <Table celled striped size="small">
+      <h1 className="text-gray-400">Objective Claims for Review</h1>
+      <Table className="ui inverted table" celled striped size="small">
         <Table.Body>
           <Table.Row>
             <Table.Cell width={3} textAlign="right">

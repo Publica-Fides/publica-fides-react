@@ -8,7 +8,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="gradient w-full z-30 text-white pt-5">
+    <nav className="gradient w-full z-30 text-white py-5">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <a

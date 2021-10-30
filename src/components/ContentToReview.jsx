@@ -104,17 +104,17 @@ export default function Main({ accountPair }) {
 
   return (
     <Grid.Column>
-      <h1>Content To Review</h1>
-      <h3>
+      <h1 className="text-gray-400">Content To Review</h1>
+      <h4>
         Members of the Content Reviewers can see this list. Members must go
         through any viewable content and come up with objective statements for
         any claims made in the article, or vote on existing ones. Their
         objective claim statements will be reviewed for objectivity by their
         peers, and for perceived truthfulness by another group.
-      </h3>
+      </h4>
       <div style={{ overflowWrap: "break-word" }}>{status}</div>
 
-      <Table celled striped size="small">
+      <Table className="ui inverted table" celled striped size="small">
         <Table.Body>
           <Table.Row>
             <Table.Cell width={3} textAlign="right">
