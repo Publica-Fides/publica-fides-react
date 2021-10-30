@@ -112,7 +112,12 @@ export default function Main({ accountPair }) {
         objective claim statements will be reviewed for objectivity by their
         peers, and for perceived truthfulness by another group.
       </h4>
-      <div style={{ overflowWrap: "break-word" }}>{status}</div>
+      {status && (
+        <div className="bg-gray-800 p-5 break-words">
+          <div className="text-emerald-600">Status:</div>
+          <p className="text-gray-400">{status}</p>
+        </div>
+      )}
 
       <Table className="ui inverted table" celled striped size="small">
         <Table.Body>

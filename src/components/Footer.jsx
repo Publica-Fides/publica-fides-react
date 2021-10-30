@@ -18,8 +18,8 @@ export default function Footer() {
                 href="https://www.freepik.com/free-photos-vectors/background"
                 className="text-gray-200 text-xs"
               >
-                Background vector, logo, and hero created by freepik -
-                www.freepik.com
+                Background vector, logo, cloud/space, and hero created by
+                freepik - www.freepik.com
               </a>
             </div>
           </div>

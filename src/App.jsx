@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import TryChain from "./pages/TryChain";
+import ChainFeed from "./pages/ChainFeed";
 
 function Main() {
   return (
@@ -15,6 +16,7 @@ function Main() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/tryChain" component={TryChain} />
+        <Route path="/chainFeed" component={ChainFeed} />
       </Switch>
       <Footer />
     </Router>
