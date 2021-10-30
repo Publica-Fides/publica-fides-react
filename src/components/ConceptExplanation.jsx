@@ -29,7 +29,8 @@ export default function ConceptExplanation() {
                 </h2>
                 <p class="leading-relaxed">
                   First you submit some content that you want to verify the
-                  factual truthfulness of, along with a reward for the people
+                  factual truthfulness of, along with a{" "}
+                  <span className="text-indigo-300">reward</span> for the people
                   that judge it.
                 </p>
               </div>
@@ -56,9 +57,10 @@ export default function ConceptExplanation() {
                   STEP 2
                 </h2>
                 <p class="leading-relaxed">
-                  Then we use our peer prediction model(PPM) on it a couple of
-                  times. In this step, we use humans to extract the claims that
-                  might be factual from the content.
+                  Then we use our{" "}
+                  <span className="text-indigo-400">peer prediction model</span>
+                  (PPM) on it a couple of times. In this step, we use humans to
+                  extract the claims that might be factual from the content.
                 </p>
               </div>
             </div>
@@ -86,8 +88,9 @@ export default function ConceptExplanation() {
                 </h2>
                 <p class="leading-relaxed">
                   Next, the PPM is used to judge the extracted claims, so that
-                  the claims that aren't objectively factual are removed, such
-                  as feelings about climate change versus facts.
+                  the claims that aren't objectively factual are{" "}
+                  <span className="text-red-400">removed</span>, such as
+                  feelings about climate change versus facts.
                 </p>
               </div>
             </div>
@@ -115,7 +118,8 @@ export default function ConceptExplanation() {
                 </h2>
                 <p class="leading-relaxed">
                   Afterwards, we use PPM one last time, to figure out if the
-                  remaining claims are true or not.
+                  remaining claims are true or not. Along with some{" "}
+                  <span className="text-pink-500">fraud detection</span>.
                 </p>
               </div>
             </div>
