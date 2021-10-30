@@ -1,4 +1,12 @@
+import { NavLink, useHistory } from "react-router-dom";
+
 export default function Navbar() {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/tryChain");
+  }
+
   return (
     <nav className="gradient w-full z-30 text-white pt-5">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
@@ -36,35 +44,42 @@ export default function Navbar() {
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <a
-                className="inline-block py-2 px-4 text-white font-bold no-underline"
-                href="#"
+              <NavLink
+                exact
+                className="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                activeClassName="font-extrabold"
+                to="/"
               >
-                Active
-              </a>
+                Home
+              </NavLink>
             </li>
             <li className="mr-3">
-              <a
+              <NavLink
+                exact
                 className="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
+                to="/chainFeed"
+                activeClassName="font-extrabold"
               >
-                link
-              </a>
+                chainFeed
+              </NavLink>
             </li>
             <li className="mr-3">
-              <a
+              <NavLink
+                exact
                 className="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                href="#"
+                to="/tryChain"
+                activeClassName="font-extrabold"
               >
-                link
-              </a>
+                tryChain
+              </NavLink>
             </li>
           </ul>
           <button
             id="navAction"
             className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            onClick={handleClick}
           >
-            Action
+            Try the Chain!
           </button>
         </div>
       </div>

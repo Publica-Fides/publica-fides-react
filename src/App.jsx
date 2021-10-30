@@ -13,8 +13,8 @@ function Main() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/TryChain" component={TryChain} />
-        <Route path="/" component={Home} />
+        <Route path="/" exact component={Home} />
+        <Route path="/tryChain" component={TryChain} />
       </Switch>
       <Footer />
     </Router>
