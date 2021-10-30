@@ -1,4 +1,4 @@
-export default function ProfileCard() {
+export default function Team() {
   {
     /* <section className="bg-dark12 py-8">
         <div className="container bg-gray-900 max-w-5xl m-8 mx-auto md:flex rounded-xl p-8 md:p-0">

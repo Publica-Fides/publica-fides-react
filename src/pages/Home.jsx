@@ -1,6 +1,6 @@
 import ConceptExplanation from "../components/ConceptExplanation";
 import Hero from "../components/Hero";
-import ProfileCard from "../components/ProfileCard";
+import Team from "../components/Team";
 import SvgTransition from "../components/SvgTransition";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
       <Hero />
       <SvgTransition version={1} />
       <ConceptExplanation />
-      <ProfileCard />
+      <Team />
     </main>
   );
 };
